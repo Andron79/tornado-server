@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  tornado-server:
+    build: .
+    command: python ./server.py
+
+    ports:
+      - "8888:8888"
+#    hostname: tornado-chat
+#    network_mode: host
+#    volumes:
+#      - ./:/server/
+
